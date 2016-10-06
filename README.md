@@ -27,11 +27,12 @@ npm run start
 
 ```javascript
 http://localhost:3000/admin/index/index
-显示
+//显示
 hello koahubjs
 ```
 
 
 
 ## 官网
-[http://js.koahub.com]http://js.koahub.com
+[KoaHub.js官网](http://js.koahub.com)
+
