@@ -18,9 +18,9 @@ git clone https://github.com/einsqing/koahubjs-demo
 //安装依赖
 npm install
 //编译
-npm compile
+npm run compile
 //启动
-node start.js
+npm run start
 ```
 
 #### 浏览器访问
