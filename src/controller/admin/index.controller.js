@@ -8,6 +8,11 @@ export default class extends base {
 
     index() {
         super.isLogin();
-        super.json('hello koahubjs');
+        console.log('hello koahubjs');
+    }
+
+    index2() {
+        super.isLogin();
+        console.log('hello koahubjs2');
     }
 }
