@@ -1,13 +1,12 @@
-import base from "./base.controller";
-
-export default class extends base {
+export default class extends koahub.http {
 
     constructor() { //构造函数
         super();
     }
 
     index() {
-        super.view(111);
+        // super.isLogin();
+        console.log('home hello koahubjs');
     }
 
     index2() {
