@@ -5,5 +5,5 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     port: 3000,
-    default_module: 'admin'
+    default_module: 'home'
 };

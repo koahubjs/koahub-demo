@@ -20,6 +20,10 @@ var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstru
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
+var _get2 = require('babel-runtime/helpers/get');
+
+var _get3 = _interopRequireDefault(_get2);
+
 var _inherits2 = require('babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
@@ -38,14 +42,7 @@ var _class = function (_koahub$http) {
     (0, _createClass3.default)(_class, [{
         key: 'index',
         value: function index() {
-            // super.isLogin();
-            console.log('home hello koahubjs');
-        }
-    }, {
-        key: 'index2',
-        value: function index2() {
-            // super.isLogin();
-            console.log('hello koahubjs2');
+            (0, _get3.default)(_class.prototype.__proto__ || (0, _getPrototypeOf2.default)(_class.prototype), 'view', this).call(this, 'hello koahubjs');
         }
     }]);
     return _class;

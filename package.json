@@ -1,6 +1,6 @@
 {
   "name": "koahubjs-demo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "app/index.js",
   "scripts": {
@@ -22,9 +22,7 @@
   "dependencies": {
     "babel-runtime": "^6.11.6",
     "bookshelf": "^0.10.1",
-    "co": "^4.6.0",
     "knex": "^0.12.0",
-    "koa": "^2.0.0-alpha.7",
     "koahubjs": "*",
     "mysql": "^2.11.1"
   },

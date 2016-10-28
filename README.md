@@ -26,7 +26,7 @@ npm run start
 #### 浏览器访问
 
 ```javascript
-http://localhost:3000/admin/index/index
+http://localhost:3000
 //显示
 hello koahubjs
 ```

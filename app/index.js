@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-var _koahubjs = require("koahubjs");
+var _koahubjs = require('koahubjs');
 
 var _koahubjs2 = _interopRequireDefault(_koahubjs);
 
@@ -8,3 +8,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var app = new _koahubjs2.default();
 app.run();
+
+koahub.hook.add('hook1', '/admin/index2/index');
+koahub.hook.add('hook1', '/admin/index2/index2');
+
+koahub.hook.add('hook2', 'tools.add(1,2)');
+koahub.hook.add('hook2', 'tools.dis(2,1)');

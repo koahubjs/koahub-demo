@@ -7,11 +7,10 @@ export default class extends base {
     }
 
     index() {
-        super.view(111);
+        super.view(1);
     }
 
     index2() {
-        // super.isLogin();
-        console.log('hello koahubjs2');
+        super.json(1, 2);
     }
 }

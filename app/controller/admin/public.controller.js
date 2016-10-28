@@ -20,22 +20,14 @@ var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstru
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
-var _get2 = require("babel-runtime/helpers/get");
-
-var _get3 = _interopRequireDefault(_get2);
-
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _base2 = require("./base.controller");
-
-var _base3 = _interopRequireDefault(_base2);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _class = function (_base) {
-    (0, _inherits3.default)(_class, _base);
+var _class = function (_koahub$http) {
+    (0, _inherits3.default)(_class, _koahub$http);
 
     function _class() {
         (0, _classCallCheck3.default)(this, _class);
@@ -44,17 +36,10 @@ var _class = function (_base) {
     }
 
     (0, _createClass3.default)(_class, [{
-        key: "index",
-        value: function index() {
-            (0, _get3.default)(_class.prototype.__proto__ || (0, _getPrototypeOf2.default)(_class.prototype), "view", this).call(this, 1);
-        }
-    }, {
-        key: "index2",
-        value: function index2() {
-            (0, _get3.default)(_class.prototype.__proto__ || (0, _getPrototypeOf2.default)(_class.prototype), "json", this).call(this, 1, 2);
-        }
+        key: "login",
+        value: function login() {}
     }]);
     return _class;
-}(_base3.default);
+}(koahub.http);
 
 exports.default = _class;

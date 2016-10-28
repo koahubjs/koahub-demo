@@ -4,7 +4,7 @@ export default class extends koahub.http {
         super();
     }
 
-    index() {
-        super.view('hello koahubjs');
+    login() {
+
     }
 }
