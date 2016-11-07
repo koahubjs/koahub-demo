@@ -1,6 +1,6 @@
 {
   "name": "koahubjs-demo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "app/index.js",
   "scripts": {
@@ -20,18 +20,10 @@
   "author": "js.koahub.com",
   "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.11.6",
     "bookshelf": "^0.10.1",
     "knex": "^0.12.0",
     "koahubjs": "*",
     "mysql": "^2.11.1"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-core": "^6.14.0",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-preset-stage-3": "^6.11.0"
   },
   "engines": {
     "node": ">= 0.12.0"
