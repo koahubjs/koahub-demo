@@ -1,6 +1,6 @@
 {
   "name": "koahubjs-demo",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "app/index.js",
   "scripts": {
@@ -21,7 +21,10 @@
   "license": "ISC",
   "dependencies": {
     "bookshelf": "^0.10.1",
+    "co": "^4.6.0",
     "knex": "^0.12.0",
+    "koa-convert": "^1.2.0",
+    "koa-hbs": "^0.9.0",
     "koahubjs": "*",
     "mysql": "^2.11.1"
   },

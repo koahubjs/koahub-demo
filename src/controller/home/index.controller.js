@@ -1,10 +1,11 @@
 export default class extends koahub.http {
 
-    constructor() { //构造函数
+    constructor() {
         super();
     }
 
-    index() {
-        super.view('hello koahubjs');
+    async index() {
+        const context = {version: process.version, time: new Date()};
+        await ctx.render('index', context);
     }
 }
