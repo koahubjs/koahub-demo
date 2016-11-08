@@ -8,7 +8,7 @@ const koa = app.getKoa();
 
 koa.use(convert(hbs.middleware({
     extname: '.html',
-    viewPath: './www',
+    viewPath: './www'
 })));
 
 koa.use(async(ctx, next) => {
