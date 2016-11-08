@@ -25,6 +25,7 @@
     "knex": "^0.12.0",
     "koa-convert": "^1.2.0",
     "koa-hbs": "^0.9.0",
+    "koa-static": "^2.0.0",
     "koahubjs": "*",
     "mysql": "^2.11.1"
   },
