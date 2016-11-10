@@ -4,6 +4,7 @@ import convert from "koa-convert";
 import co from "co";
 import body from "koa-better-body";
 import serve from "koa-static";
+import helpers from "handlebars-helpers";
 
 const app = new Koahub();
 const koa = app.getKoa();
@@ -15,6 +16,10 @@ koa.use(convert(hbs.middleware({
     extname: '.html',
     viewPath: './www'
 })));
+
+helpers({
+    handlebars: hbs.handlebars
+});
 
 koa.use(async(ctx, next) => {
     const render = ctx.render;

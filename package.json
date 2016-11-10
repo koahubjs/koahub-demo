@@ -22,7 +22,9 @@
   "dependencies": {
     "bookshelf": "^0.10.1",
     "co": "^4.6.0",
+    "handlebars-helpers": "^0.7.5",
     "knex": "^0.12.0",
+    "koa-better-body": "^3.0.2",
     "koa-convert": "^1.2.0",
     "koa-hbs": "^0.9.0",
     "koa-static": "^2.0.0",
