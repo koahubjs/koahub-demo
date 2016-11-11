@@ -1,7 +1,6 @@
 import Koahub from "koahubjs";
-import hbs from "koa-hbs";
+import hbs from "koahub-handlebars";
 import convert from "koa-convert";
-import co from "co";
 import body from "koa-better-body";
 import serve from "koa-static";
 import helpers from "handlebars-helpers";
@@ -11,22 +10,15 @@ const koa = app.getKoa();
 
 koa.use(convert(body()));
 koa.use(convert(serve('./www')));
-
-koa.use(convert(hbs.middleware({
+koa.use(hbs.middleware({
     extname: '.html',
-    viewPath: './www'
-})));
+    viewPath: './www',
+    layoutsPath: './www',
+    partialsPath: './www'
+}));
 
 helpers({
     handlebars: hbs.handlebars
-});
-
-koa.use(async(ctx, next) => {
-    const render = ctx.render;
-    ctx.render = async function _convertedRender() {
-        return co.call(ctx, render.apply(ctx, arguments))
-    }
-    await next();
 });
 
 app.run();
