@@ -21,4 +21,12 @@ helpers({
     handlebars: hbs.handlebars
 });
 
+// 支持全局快捷方法
+koa.use(async function(ctx, next){
+    if(!global.model && koahub.utils.model){
+        global.model = koahub.utils.model;
+    }
+    await next();
+});
+
 app.run();
