@@ -2,6 +2,9 @@ export default class extends koahub.http {
 
     constructor() {
         super();
+
+        //设置模版主题
+        ctx.state.theme = 'home';
     }
 
     async index() {
