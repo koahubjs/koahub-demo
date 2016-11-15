@@ -31,6 +31,37 @@ http://localhost:3000
 hello koahubjs
 ```
 
+#### 自定义post／file中间件
+
+```js
+// use koa-better-body
+koa.use(async function (ctx, next) {
+
+    if (ctx.request.fields) {
+        ctx.post = ctx.request.fields;
+    }
+
+    if (ctx.request.files) {
+        ctx.file = ctx.request.files;
+    }
+
+    await next();
+});
+```
+
+#### 快捷方法中间件
+
+```js
+koa.use(async function (ctx, next) {
+
+    if (!global.model && koahub.utils.model) {
+        global.model = koahub.utils.model;
+    }
+  
+    await next();
+});
+```
+
 
 
 ## 官网
