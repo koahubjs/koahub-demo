@@ -1,11 +1,11 @@
 {
   "name": "koahubjs-demo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "app/index.js",
   "scripts": {
     "start": "node app/index.js",
-    "compile": "babel --presets es2015,stage-3 --plugins transform-runtime src/ --out-dir app/ --watch"
+    "compile": "babel src/ --out-dir app/ --watch"
   },
   "keywords": [
     "web",

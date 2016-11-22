@@ -1,14 +1,14 @@
 export default class extends koahub.http {
 
-    constructor() {
-        super();
+    constructor(ctx, next) {
+        super(ctx);
 
         //设置模版主题
-        ctx.state.theme = 'home';
+        super.state('theme', 'home');
     }
 
     async index() {
         const context = {version: process.version, time: new Date()};
-        await ctx.render('index', context);
+        await super.render('index', context);
     }
 }
