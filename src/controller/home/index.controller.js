@@ -1,7 +1,7 @@
 export default class extends koahub.http {
 
     constructor(ctx, next) {
-        super(ctx);
+        super(ctx, next);
 
         //设置模版主题
         super.state('theme', 'home');
