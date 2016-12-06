@@ -70,10 +70,6 @@ koa.use(async function (ctx, next) {
 
 默认模版引擎关闭了缓存，修改模版问题会立即生效。正式环境建议开启缓存，速度将提升10倍。
 
-2.修改代码未生效
-
-修改配置watcher，cluster需要手动重启。
-
 ## 官网
 [KoaHub.js官网](http://js.koahub.com)
 
