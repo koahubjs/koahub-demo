@@ -26,6 +26,7 @@
     "knex": "^0.12.0",
     "koa-better-body": "^3.0.2",
     "koa-convert": "^1.2.0",
+    "koa-session2": "^1.0.8",
     "koa-static": "^2.0.0",
     "koahub-handlebars": "*",
     "koahubjs": "*",
