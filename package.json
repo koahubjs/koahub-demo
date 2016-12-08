@@ -4,8 +4,7 @@
   "description": "",
   "main": "runtime/index.js",
   "scripts": {
-    "start": "node runtime/index.js",
-    "compile": "babel app/ --out-dir runtime/ --watch"
+    "start": "koahub start app/index.js --watch --compile"
   },
   "keywords": [
     "web",

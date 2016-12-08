@@ -17,10 +17,8 @@ github地址：http://github.com/einsqing/koahubjs
 git clone https://github.com/einsqing/koahubjs-demo
 //安装依赖
 npm install
-//编译
-npm run compile
 //启动
-npm run start
+npm start
 ```
 
 #### 浏览器访问
