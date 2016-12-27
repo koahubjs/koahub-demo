@@ -13,12 +13,16 @@ github地址：http://github.com/einsqing/koahubjs
 #### 下载安装
 
 ```javascript
-//下载
-git clone https://github.com/einsqing/koahubjs-demo
-//安装依赖
+// 安装命令行工具
+npm i koahub-cli -g
+// 下载demo
+git clone https://github.com/einsqing/koahubjs-demo.git
+// 进入项目
+cd koahubjs-demo
+// 安装依赖
 npm install
-//启动
-npm start
+// 启动项目
+koahub start app/index --watch --compile
 ```
 
 #### 浏览器访问
