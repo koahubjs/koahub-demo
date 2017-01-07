@@ -1,1 +1,1 @@
-require('koahub-cli').run('start app/index.js');
+require('koahub-cli').run('start app/index.js --watch --compile');
