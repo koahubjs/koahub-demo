@@ -28,8 +28,10 @@ helpers({
 
 // 支持全局快捷方法
 koa.use(async function(ctx, next){
-    if(!global.model && koahub.utils.model){
-        global.model = koahub.utils.model;
+    if(!global.model){
+        global.model = function(model){
+            return koahub.models[model];
+        };
     }
     await next();
 });

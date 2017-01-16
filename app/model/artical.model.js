@@ -1,4 +1,4 @@
-import bookshelf from "./../data/mysql.init";
+import bookshelf from "./../data/bookshelf.init";
 
 const model = bookshelf.Model.extend({
     tableName: 'artical',

@@ -2,15 +2,15 @@ import base from "./base.controller";
 
 export default class extends base {
 
-    constructor(ctx, next) {
-        super(ctx, next);
+    async _initialize() {
+        await super._initialize();
     }
 
-    index() {
-        super.view(1);
+    async index() {
+        this.view(1);
     }
 
-    index2() {
-        super.json(1, 2);
+    async index2() {
+        this.json(1, 2);
     }
 }

@@ -1,11 +1,10 @@
 export default class extends koahub.http {
 
-    constructor(ctx, next) {
-        super(ctx, next);
-        console.log('base http')
+    async _initialize() {
+        console.log('base _initialize')
     }
 
-    isLogin() {
+    async isLogin() {
         console.log('base isLogin');
     }
 }
