@@ -23,7 +23,7 @@ bookshelf.Model = bookshelf.Model.extend({
         if (!data.id) {
             delete data.id;
         }
-        const data = await this.forge(data).save();
+        data = await this.forge(data).save();
         return this.handle(data);
     },
     del: async function (condition) {
