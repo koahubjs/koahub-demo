@@ -31,7 +31,7 @@ http://localhost:3000
 hello koahubjs
 ```
 
-#### 自定义post／file中间件
+#### 快捷方法中间件, 自定义post／file中间件
 
 ```js
 // use koa-better-body
@@ -48,21 +48,6 @@ koa.use(async function (ctx, next) {
     await next();
 });
 ```
-
-#### 快捷方法中间件
-
-```js
-koa.use(async function (ctx, next) {
-
-    if (!global.model && koahub.utils.model) {
-        global.model = koahub.utils.model;
-    }
-  
-    await next();
-});
-```
-
-
 
 ### 常见问题
 
