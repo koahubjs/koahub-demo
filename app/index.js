@@ -1,4 +1,4 @@
-import Koahub from "koahubjs";
+import Koahub from "koahub";
 import hbs from "koahub-handlebars";
 import convert from "koa-convert";
 import body from "koa-better-body";
