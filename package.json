@@ -27,9 +27,9 @@
     "koa-convert": "^1.2.0",
     "koa-session2": "^1.0.8",
     "koa-static": "^2.1.0",
-    "koahub": "git+https://github.com/koahubjs/koahub.git",
-    "koahub-cli": "git+https://github.com/koahubjs/koahub-cli.git",
-    "koahub-handlebars": "*",
+    "koahub": "github:koahubjs/koahub",
+    "koahub-cli": "github:koahubjs/koahub-cli",
+    "koahub-handlebars": "github:koahubjs/koahub-handlebars",
     "mysql": "^2.13.0"
   },
   "devDependencies": {
