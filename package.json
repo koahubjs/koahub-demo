@@ -19,25 +19,22 @@
   "author": "js.koahub.com",
   "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.18.0",
-    "bookshelf": "^0.10.1",
-    "handlebars-helpers": "^0.7.5",
-    "knex": "^0.12.0",
+    "babel-runtime": "^6.22.0",
+    "bookshelf": "^0.10.3",
+    "handlebars-helpers": "^0.8.0",
+    "knex": "^0.12.6",
     "koa-better-body": "^3.0.2",
     "koa-convert": "^1.2.0",
     "koa-session2": "^1.0.8",
-    "koa-static": "^2.0.0",
-    "koahub": "*",
+    "koa-static": "^2.1.0",
+    "koahub": "git+https://github.com/koahubjs/koahub.git",
     "koahub-cli": "*",
     "koahub-handlebars": "*",
-    "mysql": "^2.11.1"
+    "mysql": "^2.13.0"
   },
   "devDependencies": {
-    "mocha": "^3.1.2",
-    "should": "^11.1.1",
-    "supertest": "^2.0.1"
-  },
-  "engines": {
-    "node": ">= 0.12.0"
+    "mocha": "^3.2.0",
+    "should": "^11.2.0",
+    "supertest": "^3.0.0"
   }
 }
