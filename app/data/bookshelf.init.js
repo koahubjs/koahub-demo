@@ -30,11 +30,11 @@ bookshelf.Model = bookshelf.Model.extend({
         const data = await this.forge(condition).destroy();
         return this.handle(data);
     },
-    get: async function (condition) {
+    get: async function (condition, options) {
         const data = await this.query({where: condition}).fetch(options);
         return this.handle(data);
     },
-    getList: async function (condition) {
+    getList: async function (condition, options) {
         const data = await this.query({where: condition}).fetchAll(options);
         return this.handle(data);
     },
@@ -42,10 +42,10 @@ bookshelf.Model = bookshelf.Model.extend({
         const data = await this.query({where: condition}).count();
         return this.handle(data);
     },
-    getPageList: async function (page, callback, option) {
+    getPageList: async function (page, callback, options) {
     	let pageNum = 25;
-        if (option != undefined && option.pageNum != undefined) {
-            pageNum = option.pageNum;
+        if (options != undefined && options.pageNum != undefined) {
+            pageNum = options.pageNum;
         }
 
         const data = await this.query(function (qb) {
@@ -65,7 +65,7 @@ bookshelf.Model = bookshelf.Model.extend({
             pagination: data.pagination
         };
     },
-    getQueryList: async function (callback) {
+    getQueryList: async function (callback, options) {
         const data = await this.query(function (qb) {
             if (typeof callback === 'function') {
                 callback(qb);

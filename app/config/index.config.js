@@ -4,13 +4,9 @@ export default {
 
 	//自动加载配置
     loader: {
-        "models": [{
+        "models": {
             root: 'model',
             suffix: '.model.js'
-        }, {
-            root: 'addon',
-            suffix: '.model.js',
-            filter: [/\/model/]
-        }]
+        }
     }
 }
