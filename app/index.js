@@ -5,6 +5,7 @@ import body from "koa-better-body";
 import serve from "koa-static";
 import session from "koa-session2";
 import helpers from "handlebars-helpers";
+import model from "./util/model.util";
 
 const app = new Koahub();
 const koa = app.getKoa();
@@ -28,11 +29,18 @@ helpers({
 
 // 支持全局快捷方法
 koa.use(async function(ctx, next){
-    if(!global.model){
-        global.model = function(model){
-            return koahub.models[model];
-        };
+    
+    if (!global.model) {
+        global.model = model;
     }
+
+    if (ctx.request.fields) {
+        ctx.post = ctx.request.fields;
+    }
+    if (ctx.request.files) {
+        ctx.file = ctx.request.files;
+    }
+    
     await next();
 });
 
