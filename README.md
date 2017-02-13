@@ -32,15 +32,19 @@ http://localhost:3000
 #### 快捷方法中间件, 自定义post／file中间件
 
 ```js
-// use koa-better-body
+// use koa-body
 koa.use(async function (ctx, next) {
 
-    if (ctx.request.fields) {
-        ctx.post = ctx.request.fields;
+    if (!ctx.post) {
+        if (!ctx.request.body.files) {
+            ctx.post = ctx.request.body;
+        } else {
+            ctx.post = ctx.request.body.fields;
+        }
     }
 
-    if (ctx.request.files) {
-        ctx.file = ctx.request.files;
+    if (!ctx.file) {
+        ctx.file = ctx.request.body.files;
     }
 
     await next();
