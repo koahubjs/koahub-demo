@@ -23,7 +23,7 @@
     "bookshelf": "^0.10.3",
     "handlebars-helpers": "^0.8.0",
     "knex": "^0.12.6",
-    "koa-better-body": "^3.0.2",
+    "koa-body": "^1.6.0",
     "koa-convert": "^1.2.0",
     "koa-session2": "^1.0.8",
     "koa-static": "^2.1.0",

@@ -1,7 +1,7 @@
 import Koahub from "koahub";
 import hbs from "koahub-handlebars";
 import convert from "koa-convert";
-import body from "koa-better-body";
+import body from "koa-body";
 import serve from "koa-static";
 import session from "koa-session2";
 import helpers from "handlebars-helpers";
@@ -10,7 +10,7 @@ import model from "./util/model.util";
 const app = new Koahub();
 const koa = app.getKoa();
 
-koa.use(convert(body()));
+koa.use(convert(body({multipart: true})));
 koa.use(convert(serve('./www')));
 koa.use(session({
     key: "koahubjs",   //default "koa:sess"
@@ -34,11 +34,16 @@ koa.use(async function(ctx, next){
         global.model = model;
     }
 
-    if (ctx.request.fields) {
-        ctx.post = ctx.request.fields;
+    if (!ctx.post) {
+        if (!ctx.request.body.files) {
+            ctx.post = ctx.request.body;
+        } else {
+            ctx.post = ctx.request.body.fields;
+        }
     }
-    if (ctx.request.files) {
-        ctx.file = ctx.request.files;
+
+    if (!ctx.file) {
+        ctx.file = ctx.request.body.files;
     }
     
     await next();
