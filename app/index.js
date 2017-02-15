@@ -30,21 +30,15 @@ helpers({
 // 支持全局快捷方法
 koa.use(async function(ctx, next){
     
-    if (!global.model) {
-        global.model = model;
+    ctx.model = model;
+
+    if (!ctx.request.body.files) {
+        ctx.post = ctx.request.body;
+    } else {
+        ctx.post = ctx.request.body.fields;
     }
 
-    if (!ctx.post) {
-        if (!ctx.request.body.files) {
-            ctx.post = ctx.request.body;
-        } else {
-            ctx.post = ctx.request.body.fields;
-        }
-    }
-
-    if (!ctx.file) {
-        ctx.file = ctx.request.body.files;
-    }
+    ctx.file = ctx.request.body.files;
     
     await next();
 });

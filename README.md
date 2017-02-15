@@ -35,17 +35,13 @@ http://localhost:3000
 // use koa-body
 koa.use(async function (ctx, next) {
 
-    if (!ctx.post) {
-        if (!ctx.request.body.files) {
-            ctx.post = ctx.request.body;
-        } else {
-            ctx.post = ctx.request.body.fields;
-        }
+    if (!ctx.request.body.files) {
+        ctx.post = ctx.request.body;
+    } else {
+        ctx.post = ctx.request.body.fields;
     }
 
-    if (!ctx.file) {
-        ctx.file = ctx.request.body.files;
-    }
+    ctx.file = ctx.request.body.files;
 
     await next();
 });

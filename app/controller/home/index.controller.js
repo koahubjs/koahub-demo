@@ -2,7 +2,7 @@ export default class extends koahub.http {
 
     _initialize() {
         //设置模版主题
-        this.state('theme', 'home');
+        this.state.theme = 'home';
     }
 
     async index() {

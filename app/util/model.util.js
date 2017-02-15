@@ -11,6 +11,7 @@ export default function (_model, options) {
         });
     }
     options = options || {};
+    let pageNum = 25;
 
     return {
         model: function () {
