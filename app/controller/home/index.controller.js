@@ -7,7 +7,7 @@ export default class extends koahub.controller {
 
     async index() {
         const context = {version: process.version, time: new Date()};
-        const article = this.model('article').getList({});
+        const article = await this.model('article').getList({});
         await this.render('index', {context: context, article: article});
     }
 }
