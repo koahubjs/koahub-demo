@@ -54,6 +54,6 @@ koa.use(async function (ctx, next) {
             console.error('数据库中没有对应的表')
         }
     }
-}));
+});
 
 app.run();
