@@ -1,6 +1,6 @@
 export default class extends koahub.controller {
 
-    _initialize() {
+    async _initialize() {
         //设置模版主题
         this.state.theme = 'home';
     }
