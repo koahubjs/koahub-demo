@@ -29,23 +29,6 @@ npm start
 http://localhost:3000
 ```
 
-#### 快捷方法中间件, 自定义post／file中间件
-
-```js
-// use koa-body
-koa.use(async function (ctx, next) {
-
-    if (!ctx.request.body.files) {
-        ctx.post = ctx.request.body;
-    } else {
-        ctx.post = ctx.request.body.fields;
-        ctx.file = ctx.request.body.files;
-    }
-
-    await next();
-});
-```
-
 ### 常见问题
 
 1.模版引擎慢

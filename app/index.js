@@ -4,9 +4,8 @@ import helpers from "handlebars-helpers";
 import model from "./util/model.util";
 
 const app = new Koahub();
-const koa = app.getKoa();
 
-koa.use(hbs.middleware({
+app.use(hbs.middleware({
     extname: '.html',
     viewPath: './www',
     layoutsPath: './www',
@@ -19,7 +18,7 @@ helpers({
 });
 
 // 支持全局快捷方法
-koa.use(async function(ctx, next){
+app.use(async function(ctx, next){
     
     ctx.model = model;
 
