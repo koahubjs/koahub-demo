@@ -1,6 +1,6 @@
-import bookshelf from "./../data/bookshelf.init";
+const bookshelf = require("./../data/bookshelf.init");
 
-export default function (_model, options) {
+module.exports = function (_model, options) {
 
     let model = koahub.models[_model];
     // 自动创建model

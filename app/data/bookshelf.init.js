@@ -1,6 +1,6 @@
-import Knex from "knex";
-import Bookshelf from "bookshelf";
-import db from "./../config/db.config";
+const Knex = require("knex");
+const Bookshelf = require("bookshelf");
+const db = require("./../config/db.config");
 
 const knex = new Knex({
     client: 'mysql',
@@ -10,4 +10,4 @@ const knex = new Knex({
 const bookshelf = new Bookshelf(knex);
 bookshelf.plugin('pagination');
 
-export default bookshelf;
+module.exports = bookshelf;

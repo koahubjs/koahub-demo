@@ -1,6 +1,6 @@
 {
   "name": "koahub-demo",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "koahub-demo",
   "main": "app.js",
   "scripts": {
@@ -19,7 +19,6 @@
   "author": "js.koahub.com",
   "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.22.0",
     "bookshelf": "^0.10.3",
     "handlebars-helpers": "^0.8.0",
     "knex": "^0.12.6",

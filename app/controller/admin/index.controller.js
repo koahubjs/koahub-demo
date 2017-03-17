@@ -1,6 +1,6 @@
-import base from "./base.controller";
+const base = require("./base.controller");
 
-export default class extends base {
+module.exports = class extends base {
 
     async _initialize() {
         await super._initialize();
