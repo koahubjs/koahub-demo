@@ -1,8 +1,4 @@
-const bookshelf = require("./../data/bookshelf.init");
-
-const model = bookshelf.Model.extend({
+module.exports = koahub.model.extend({
     tableName: 'article',
     hasTimestamps: true
 });
-
-module.exports = model;

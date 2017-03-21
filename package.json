@@ -19,13 +19,11 @@
   "author": "js.koahub.com",
   "license": "ISC",
   "dependencies": {
-    "bookshelf": "^0.10.3",
     "handlebars-helpers": "^0.8.0",
-    "knex": "^0.12.6",
     "koahub": "github:koahubjs/koahub",
     "koahub-cli": "github:koahubjs/koahub-cli",
     "koahub-handlebars": "github:koahubjs/koahub-handlebars",
-    "mysql": "^2.13.0"
+    "koahub-mysql": "github:koahubjs/koahub-mysql"
   },
   "devDependencies": {
     "mocha": "^3.2.0",
