@@ -20,10 +20,10 @@
   "license": "ISC",
   "dependencies": {
     "handlebars-helpers": "^0.8.0",
-    "koahub": "github:koahubjs/koahub",
-    "koahub-cli": "github:koahubjs/koahub-cli",
-    "koahub-handlebars": "github:koahubjs/koahub-handlebars",
-    "koahub-mysql": "github:koahubjs/koahub-mysql"
+    "koahub": "koahubjs/koahub",
+    "koahub-cli": "koahubjs/koahub-cli",
+    "koahub-handlebars": "koahubjs/koahub-handlebars",
+    "koahub-mysql": "koahubjs/koahub-mysql"
   },
   "devDependencies": {
     "mocha": "^3.2.0",
