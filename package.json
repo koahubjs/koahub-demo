@@ -1,6 +1,6 @@
 {
   "name": "koahub-demo",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "koahub-demo",
   "main": "app.js",
   "scripts": {
@@ -19,11 +19,14 @@
   "author": "js.koahub.com",
   "license": "ISC",
   "dependencies": {
+    "got": "^6.7.1",
     "handlebars-helpers": "^0.8.0",
     "koahub": "koahubjs/koahub",
     "koahub-cli": "koahubjs/koahub-cli",
     "koahub-handlebars": "koahubjs/koahub-handlebars",
-    "koahub-mysql": "koahubjs/koahub-mysql"
+    "koahub-mysql": "koahubjs/koahub-mysql",
+    "lodash": "^4.17.4",
+    "md5": "^2.2.1"
   },
   "devDependencies": {
     "mocha": "^3.2.0",
