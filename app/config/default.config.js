@@ -5,7 +5,7 @@ module.exports = {
 
 	//自动加载配置
     loader: {
-        "models": {
+        'models': {
             root: 'model',
             suffix: '.model.js'
         }
