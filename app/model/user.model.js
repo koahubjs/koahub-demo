@@ -1,4 +1,4 @@
 module.exports = koahub.model.extend({
-    tableName: 'article',
+    tableName: 'user',
     hasTimestamps: true
 });
