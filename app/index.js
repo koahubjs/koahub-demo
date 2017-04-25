@@ -1,4 +1,4 @@
-const Koahub = require("koahub");
+const Koahub = require('koahub');
 
 const app = new Koahub();
 app.run();

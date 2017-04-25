@@ -5,7 +5,8 @@ module.exports = {
     },
 
     static: {
-        dir: 'www'
+        dir: 'www',
+        dynamic: true
     },
 
     mysql: {
