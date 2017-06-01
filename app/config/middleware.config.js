@@ -1,10 +1,10 @@
 module.exports = {
 
-    session: {
+    'koa-session2': {
         key: 'koahub.js'
     },
 
-    static: {
+    'koa-static-cache': {
         dir: 'www',
         dynamic: true
     },
